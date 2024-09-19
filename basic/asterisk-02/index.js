@@ -43,20 +43,15 @@
  */
 
 // (.*) zero or more occurrences of any character
-const str = ["fooabar", "fooxbar", "foocbar", "baryfoo", "foobar", "fooxybar"]
+const str = ['fooabar', 'fooxbar', 'foocbar', 'baryfoo', 'foobar', 'fooxybar'];
 // start with foo and end with bar
-const regex = /foo.*bar/
+// in between can be any character
+const regex = /foo.*bar/;
 
-function printMatchingStrings(str) {
-  str.forEach((s) => {
-    if (regex.test(s)) {
-      console.log(s)
-    }
-  })
-}
+console.log(str.filter((s) => regex.test(s)));
+// [ 'fooabar', 'fooxbar', 'foocbar', 'foobar', 'fooxybar' ]
 
-printMatchingStrings(str)
-
+//
 // const pattern = /a.*b/
 // const string = "a123b456b"
 // const match = string.match(pattern)

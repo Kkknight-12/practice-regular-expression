@@ -1,5 +1,7 @@
 /*
 * plus repeater
+*
+* "+" -> 1 or more occurrences of the preceding item
 *  */
 
 const str = ['fooaaabar', 'fooabar', 'foobar', 'fooaaabar', 'fooxxbar']
