@@ -1,5 +1,3 @@
-Sure! Here are the notes from the provided content:
-
 ### Code Explanation
 
 1. **Array of Strings**:
